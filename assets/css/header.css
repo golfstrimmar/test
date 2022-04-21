@@ -1,4 +1,4 @@
-.header {
+/* .header {
 	z-index: 1000;
 	transition: all 0.2s ease-in-out;
 	position: fixed;
@@ -43,14 +43,14 @@
 	width: 30px;
 	height: 30px;
 }
-/*=====================*/
 .header__logo{
+	position: relative;
+	max-height: 30px;
 }
 .header__logo img {
 	height: 100%;
 	width: 100%;
 }
-/*=====================*/
 .header__menu {
 	margin: 0 30px 0 30px;
 	position: relative;
@@ -95,7 +95,6 @@
 	border-radius: 10px !important;
 	padding: 5px;
 }
-/*=====================*/
 .info {
 	display: flex;
 	align-items: center;
@@ -146,7 +145,6 @@
 	opacity: 0.4;
 }
 
-/*=========@media==============*/
 
 @media (min-width: 1000px) and (max-width: 1199px) {
 	.header {
@@ -177,7 +175,6 @@
 	}
 }
 
-/*===========*/
 
 @media (max-width: 999px) {
 	.header {
@@ -274,17 +271,34 @@
 		margin: 0 0 30px 0;
 	}
 
+} 
+*/
+
+
+.nav-link{
+font-size:smaller;
 }
 
-/*=============================*/
+.dropdown-item{
+	font-size: x-small;
+}
 
+.slider_home-text2{
+	position: relative;
+	font-size: 70px;
+	border-radius: 10px;
+text-shadow: 0px 0px 25px rgb(5, 79, 189,.8);
+}
 
-
-
-
-
-
-
+.slider_home-text2::after{
+	content: '';
+	position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 5;
+}
 
 
 
