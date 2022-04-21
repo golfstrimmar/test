@@ -1,0 +1,291 @@
+.bunner-slider {
+	min-height: 100vh;
+	overflow: hidden;
+}
+.bunner-slider .slider, .bunner-slider .slider__body, .bunner-slider .slider__item {
+	min-height: 100vh;
+}
+.bunner-slider .slider {
+	position: relative;
+}
+.bunner-slider .slider__body {
+	width: 100%;
+	height: 100%;
+}
+.bunner-slider .slider__item {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.bunner-slider .slider-card {
+	position: relative;
+}
+.bunner-slider .slider-card__img {
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 100vh;
+}
+.bunner-slider .slider-card__body {
+	display: flex;
+	flex-direction: column;
+	padding: 276px 0 0;
+	position: relative;
+	z-index: 5;
+}
+.bunner-slider .slider-card__title h2 {
+	line-height: 1.2;
+	font-weight: 500;
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1;
+	color: white;
+	text-shadow: 0px 0px 4px blue;
+}
+.bunner-slider .slider-card__button {
+	width: 280px;
+	height: 70px;
+	border-radius: 10px;
+	letter-spacing: 2.5px;
+	margin: 45px 0 0 0;
+}
+.bunner-slider .swiper-pagination {
+	position: absolute;
+	left: calc((100vw - 1240px)/2);
+	display: inline-block;
+	width: auto;
+	bottom: 22%;
+	z-index: 100;
+}
+.bunner-slider .swiper-pagination span {
+	width: 15px;
+	height: 15px;
+	border: 1px solid white;
+	background: transparent;
+	opacity: 1;
+	transition: all 0.2s ease-in-out;
+	margin: 0 10px 0 0 !important;
+}
+.bunner-slider .swiper-pagination span:last-child {
+	margin: 0 0 0 0 !important;
+}
+.bunner-slider .swiper-pagination span.swiper-pagination-bullet-active {
+	background: white;
+}
+
+.bunner-search {
+	position: relative;
+	width: 527px;
+	position: absolute;
+	left: 50%;
+	bottom: 50px;
+	transform: translate(-50%, 0);
+	z-index: 100;
+}
+.bunner-search input {
+	color: white;
+	border-bottom: 1px solid white;
+	height: 48px;
+	padding: 0 0 0 10px;
+}
+.bunner-search input::placeholder {
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: "Cormorant Garamond", serif;
+}
+
+.bunner-search button {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: -17px;
+	top: 53%;
+	transform: translate(-20px, -50%);
+	background: transparent;
+}
+.bunner-search button svg {
+	fill: white;
+	width: 60%;
+	height: 60%;
+}
+
+
+.rec {
+	margin: 30px 0 0 0;
+}
+
+.rec__wrapper {
+	background: #B692B7;
+	min-height: 313px;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.rec__img {
+	position: absolute;
+	height: 313px;
+	width: 470px;
+	right: 5px;
+	top: 0;
+	margin: 0 110px 0 auto;
+}
+
+
+.rec__text {
+	text-align: center;
+	padding: 0 0 0 58px;
+	position: relative;
+	z-index: 2;
+}
+.rec__text p {
+	line-height: 1.45;
+	white-space: nowrap;
+	letter-spacing: 0.04rem;
+}
+
+.slider--1 {
+	position: relative;
+}
+.slider--1 .content-slider-arrow {
+	left: 100px;
+	top: 115%;
+	width: 61px;
+	height: 61px;
+	box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.1);
+	border: none;
+}
+.slider--1 .content-slider-arrow svg {
+	stroke: red;
+}
+.slider--1 .content-slider-next {
+	left: 177px;
+	transform: rotate(180deg) translateY(50%);
+}
+
+
+@media (max-width: 1457px) {
+	.rec__img {
+		opacity: 0.4;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 1355px) {
+	.bunner-slider .swiper-pagination {
+		left: 30px;
+	}
+}
+@media (max-width: 767px) {
+	.bunner-slider .slider-card__button {
+		width: 100%;
+	}
+
+	.rec__img {
+		margin: 0 0 0 auto;
+		width: 100%;
+	}
+
+	.bunner-slider .swiper-pagination {
+		left: 20px;
+	}
+
+	.rec__text {
+		padding: 0 20px;
+	}
+
+	.rec__text p {
+		white-space: normal;
+	}
+
+	.slider--1 .content-slider-arrow {
+		transform: translate(-50%, -50%);
+		width: 50px;
+		height: 50px;
+		top: 110%;
+	}
+
+	.slider--1 .content-slider-prev {
+		left: calc(50% - 40px);
+	}
+
+	.slider--1 .content-slider-next {
+		left: calc(50% + 40px);
+		transform: translate(-50%, -50%) rotate(180deg);
+	}
+
+	.bunner-search input::placeholder {
+		font-size: 17px;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.bunner-search button {
+		width: 17px;
+		height: 17px;
+		right: -7px;
+		top: 51%;
+	}
+}
+@media (max-width: 767px) {
+	.bunner-search {
+		width: 100%;
+	}
+}
+
+/*====================================*/
+
+.bunner {
+	min-height: 100vh;
+	position: relative;
+}
+
+.bunner .container {
+	z-index: 2;
+	position: relative;
+}
+
+.bunner__body {
+	display: flex;
+	flex-direction: column;
+	padding: 300px 300px 0 0px;
+}
+
+
+.bunner__text {
+	margin: 50px 0 30px 0;
+}
+
+.bunner__text p {
+	margin: 0 0 10px 0;
+	text-shadow: 0px 0px 4px #1763b2;
+	font-size: 30px;
+}
+
+.slider-main-js {
+	max-height: 100%;
+}
+
+.bunner__button {
+	margin: 50px 0 0 0;
+	width: 300px;
+	height: 50px;
+}
+
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+	.bunner__body {
+		padding: 180px 0 0 0;
+	}
+}
+@media (max-width: 999px) {
+	.bunner__body {
+		padding: 150px 0 0 0;
+	}
+}

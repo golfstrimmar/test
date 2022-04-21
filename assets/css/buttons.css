@@ -1,0 +1,79 @@
+.btn {
+	border: 1px solid transparent;
+	outline: none !important;
+	transition: all 0.2s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.btn--success {
+	color: white;
+	background: #7b6492;
+	font-size: 20px;
+	font-weight: bold;
+}
+.btn--success:hover {
+	background: #a2a2ea;
+	border: 1px solid #5858b7;
+	box-shadow: 0px 0px 20px white !important;
+	color: #1c1c44;
+}
+.btn--success:focus {
+	border: 1px solid #2b2b63;
+	background: #d6a6f7;
+	box-shadow: 0px 0px 20px white !important;
+	color: white;
+}
+
+.btn--empty {
+	background: white;
+	border: 1px solid #7b6492;
+}
+.btn--empty:hover {
+	background: #9999ff;
+	border: 1px solid #0000cc;
+	box-shadow: 0px 0px 20px white !important;
+	color: #3333ff;
+}
+.btn--empty:focus {
+	border: 1px solid #0000cc;
+	background: #3333ff;
+	box-shadow: 0px 0px 20px white !important;
+	color: white;
+}
+
+.btn--light i, .btn--cross i {
+	margin: 0 0 0 0;
+	font-size: 20px;
+}
+.btn--light:hover, .btn--cross:hover {
+	background: #9999ff;
+	border: 1px solid #0000cc;
+	box-shadow: 0px 0px 20px white !important;
+	color: #3333ff;
+}
+.btn--light:focus, .btn--cross:focus {
+	border: 1px solid #0000cc;
+	background: #3333ff;
+	box-shadow: 0px 0px 20px white !important;
+	color: white;
+}
+.btn--light:focus > span, .btn--cross:focus > span {
+	color: white;
+}
+
+.btn--success-icon i {
+	margin: 0 14px 0 0;
+	font-size: 20px;
+}
+.btn--success-icon span {
+	margin: 0 0 0 0;
+}
+.btn--success-icon:hover i, .btn--success-icon:hover span {
+	color: #3333ff;
+}
+.btn--success-icon:focus i, .btn--success-icon:focus span {
+	color: white;
+}

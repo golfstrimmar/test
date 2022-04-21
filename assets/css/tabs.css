@@ -1,0 +1,107 @@
+.tab-hidden-js {
+	transition: all 0.2s ease-in-out;
+	transform: scaleY(0);
+	transform-origin: top;
+}
+.tab-hidden-js.is-active {
+	transform: scaleY(1);
+	/* padding: 20px; */
+}
+
+.tab-title-js i svg {
+	width: 20px;
+	height: 20px;
+	transition: all 0.2s ease-in-out;
+	stroke: #B18223;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translate(0%, -50%) rotate(0);
+}
+
+.tab-title-js i.is-active svg {
+	transform: translate(0%, -50%) rotate(180deg);
+}
+
+.tab-hidden-js {
+	width: 911px;
+	transition: max-height 0.2s ease-in-out, transform 0.3s ease-in-out;
+	position: relative;
+	font-weight: 400;
+	transform-origin: top;
+}
+.tab-hidden-js p {
+	background: transparent;
+	padding: 27px 45px;
+	line-height: 1.5;
+}
+
+
+
+
+/*====tabs======*/
+
+
+
+.tabs {
+	margin: 50px 0 0;
+
+}
+
+
+.tabs__title {
+
+}
+
+.tabs__title h2{
+	font-family: 'Sarina', cursive;
+}
+
+
+.tabs__title {
+	z-index: 4;
+	text-align: center;
+}
+
+
+.tabs__body {
+	margin: 20px 0 40px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.tab {
+	border-radius: 10px;
+	margin: 0 auto 16px;
+	position: relative;
+	background: white;
+}
+
+.tab__title {
+	border-radius: 10px;
+	width: 100%;
+	height: 50px;
+	padding: 0 45px;
+	box-shadow: 0 50px 100px 0 rgba(40, 40, 40, 0.15);
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	transition: all .2s ease-in-out;
+}
+
+
+.tab__title span {
+	transition: all 0.5s ease-in-out;
+	color: #B18223;
+}
+.tab__title.is-active{
+	box-shadow: inset 0 0 8px mediumblue;
+	transition: all .2s ease-in-out;
+}
+.tab__title.is-active span, .tab__title.is-active svg{
+	color: mediumblue;
+	stroke: mediumblue;
+}

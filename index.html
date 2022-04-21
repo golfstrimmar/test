@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>START-HTML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/ico">
+
+
+    <link href="assets/css/app.css" rel="stylesheet">
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/header.css" rel="stylesheet">
+    <link href="assets/css/null.css" rel="stylesheet">
+    <link href="assets/css/fonts.css" rel="stylesheet">
+    <link href="assets/css/buttons.css" rel="stylesheet">
+    <link href="assets/css/bunner.css" rel="stylesheet">
+    <link href="assets/css/inputs.css" rel="stylesheet">
+    <link href="assets/css/tabs.css" rel="stylesheet">
+    <link href="assets/css/popup.css" rel="stylesheet">
+    <link href="assets/css/form.css" rel="stylesheet">
+    <link href="assets/css/grid.css" rel="stylesheet">
+    <link href="assets/css/sliders-swiper.css" rel="stylesheet">
+    <link href="assets/css/footer.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="wrapper">
+
+    <!--+++++++header+++++++++-->
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+
+                <!-- -======-->
+
+                <a class="header__logo" href="#!">
+                    <img src="assets/img/logo.svg" alt="img">
+                </a>
+
+                <!-- -======-->
+
+                <nav class="header__menu menu"><i class="header__close">
+                    <svg>
+                        <use xlink:href="assets/img/sprite.svg#close"></use>
+                    </svg>
+                </i>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link button-scroll" href="#!" rel="#bunner">Home</a></li>
+                        <li class="menu__item"><a class="menu__link button-scroll" href="#!" rel="#posts">Posts</a></li>
+                        <li class="menu__item"><a class="menu__link button-scroll" href="#!" rel="#galery">Projects</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- -======-->
+
+                <div class="header__info info"><a class="info_phone" href="#!">+7(000) 123 45 65 67 </a>
+                    <form class="info_search"><input placeholder="Поиск">
+                        <svg>
+                            <use xlink:href="/assets/img/sprite.svg#search"></use>
+                        </svg>
+                        <input type="submit"></form>
+                </div>
+                <!-- -======-->
+
+                <i class="header__burger">
+                    <svg>
+                        <use xlink:href="/assets/img/sprite.svg#burger"></use>
+                    </svg>
+                </i>
+                <!-- -======-->
+
+            </div>
+        </div>
+    </header>
+    <!--+++++++/header+++++++++-->
+
+
+    <!--    +++++++bunner-slider+++++++-->
+    <section class="bunner-slider" id="bunner-slider">
+        <div class="swiper-pagination"></div>
+        <div class="slider-bunner slider-bunner-js swiper-container">
+
+            <ul class="bunner-slider__body swiper-wrapper"><!--здесь нельзя overflow: hidden;-->
+
+                <li class="slider__item slider-card swiper-slide">
+                    <div class="slider-card__img imgs">
+                        <img src="assets/img/paralax.jpg" alt="img"/>
+                    </div>
+
+                    <div class="container">
+                        <div class="slider-card__body">
+                            <div class="slider-card__title">
+                                <h2 class="_f-50 _w-500">Perkant už 50 EUR <br> pristatymas nemokamas</h2>
+                            </div>
+                            <a class="btn btn--success slider-card__button _f-25 popups-init-js" rel="#popup" href="#!">
+                                Open popup</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="slider__item slider-card swiper-slide">
+                    <div class="slider-card__img imgs">
+                        <img src="assets/img/paralax.jpg" alt="img"/>
+                    </div>
+                    <div class="container">
+                        <div class="slider-card__body">
+                            <div class="slider-card__title">
+                                <h2 class="_f-50">Perkant už 50 EUR <br> pristatymas nemokamas</h2>
+                            </div>
+                            <a class="btn btn--success slider-card__button _f-25 popups-init-js" rel="#popup" href="#!">Open
+                                popup</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="slider__item slider-card swiper-slide">
+                    <div class="slider-card__img imgs">
+                        <img src="assets/img/paralax.jpg" alt="img"/>
+                    </div>
+                    <div class="container">
+                        <div class="slider-card__body">
+                            <div class="slider-card__title">
+                                <h2 class="_f-50">Perkant už 50 EUR <br> pristatymas nemokamas</h2>
+                            </div>
+                            <a class="btn btn--success slider-card__button _f-25 popups-init-js" rel="#popup" href="#!">Open
+                                popup</a>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+
+
+        </div>
+        <form class="bunner-slider__search bunner-search">
+            <input type="text" placeholder="Leškoti..."/>
+            <button type="submit">
+                <svg>
+                    <use xlink:href="/assets/img/sprite.svg#search"></use>
+                </svg>
+            </button>
+        </form>
+    </section>
+    <!--    +++++++////bunner-slider+++++++-->
+
+
+    <!--    +++++bunner++++-->
+    <section class="bunner" id="bunner">
+        <div class="bunner__bg imgs">
+            <picture>
+                <source srcset="assets/img/paralax.jpg, assets/img/paralax@2.jpg 2x,  assets/img/paralax@3.jpg 3x,"
+                        type="image/jpg" media="(min-width: 1200px)"/>
+                <source srcset="assets/img/img-2.png" type="image/png"
+                        media="(min-width: 1000px) and (max-width: 1199px)"/>
+                <source srcset="assets/img/busic.gif" type="image/gif" media="(max-width: 999px)"/>
+                <img data="assets/img/img-2.png" alt="img"/>
+            </picture>
+        </div>
+        <div class="container">
+            <div class="bunner__body">
+                <div class="bunner__title">
+                    <h1>Блог о компании</h1>
+                </div>
+                <div class="bunner__text">
+                    <p>и способы борьбы с конкурирующими компаниями</p>
+                    <a class="btn btn--success bunner__button popups-init-js" href="#!" rel="#popup">Open popup</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    +++++//bunner++++-->
+
+
+    <div>
+        <svg class="test">
+            <use xlink:href="/assets/img/sprite.svg#Vector"></use>
+        </svg>
+        <svg class="test">
+            <use xlink:href="/assets/img/sprite.svg#search"></use>
+        </svg>
+    </div>
+    <`svg>
+    <`use xlink:href='/assets/img/sprite.svg#burger'><`/use>
+    <`/svg>
+    <br>
+    a(href="#!").btn.btn--success
+    <br>
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    <!--++++++++grid++++++++++-->
+    <section class="grid">
+        <div class="container">
+            <div class="grid__title">
+                <h2>grid</h2>
+            </div>
+            <div class="grid__body">
+
+                <div class="grid__content grid-content">
+
+                    <!--   ========-->
+                    <div class="grid-content__column ">
+                        <div class="grid-content__col-title">
+                            <h3>-просто грид-</h3>
+                        </div>
+
+                        <div class="grid-simple">
+                            <div class="grid-simple__item">item1</div>
+                            <div class="grid-simple__item">item2</div>
+                        </div>
+
+                        <div>
+                            <p> .grid-simple{</p>
+                            <p> margin: 20px 0 ;</p>
+                            <p> display: grid;</p>
+                            <p> grid-template-columns: min-content 1fr;</p>
+                            <p> justify-content: space-between;</p>
+                            <p> column-gap: 20px;</p>
+                            <p> row-gap: 20px;</p>
+                            <p> }</p>
+                            <p> .grid-simple__item{</p>
+                            <p> min-height: 50px;</p>
+                            <p> } </p>
+                        </div>
+
+                    </div>
+
+
+                    <!--   ========-->
+                    <div class="grid-content__column">
+                        <div class="grid-content__col-title">
+                            <h3>-карточки одинаковой ширины заполняют пока хватает места-</h3>
+                        </div>
+                        <div class="cards cards-grid">
+                            <div class="cards__card cards-card">
+                                <div class="imgs">
+                                    <img src="assets/img/p.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="cards__card cards-card">
+                                <div class="imgs">
+                                    <img src="assets/img/p.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="cards__card cards-card">
+                                <div class="imgs">
+                                    <img src="assets/img/p.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="cards__card cards-card">
+                                <div class="imgs">
+                                    <img src="assets/img/p.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="cards__card cards-card">
+                                <div class="imgs">
+                                    <img src="assets/img/p.jpg" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div>
+                            <p> .cards-grid{</p>
+                            <p> display: grid;</p>
+                            <p> grid-template-columns: repeat(auto-fill, 200px);</p>
+                            <p> justify-content: space-between;</p>
+                            <p> column-gap: 20px;</p>
+                            <p> row-gap: 20px;</p>
+                            <p> }</p>
+                            <p> .cards-card{</p>
+                            <p> min-height: 300px;</p>
+                            <p> } </p>
+                        </div>
+                    </div>
+
+                    <!--   ========-->
+                    <div class="grid-content__column">
+                        <div class="grid-content__col-title">
+                            <h3>-разделение карточек пустотой или особенной карточкой-</h3>
+                        </div>
+                        <div class="grid-items">
+                            <div class="grid-item"><span>item1</span></div>
+                            <div class="grid-item"><span>item2</span></div>
+                            <div class="grid-item"><span>item3</span></div>
+                            <div class="grid-item"><span>item4</span></div>
+                            <div class="grid-item"><span>item5</span></div>
+                            <div class="grid-item"><span>item6</span></div>
+                            <div class="grid-item"><span>item7</span></div>
+                            <div class="grid-item"><span>item8</span></div>
+                        </div>
+                        <div>
+                            <p> .grid-items{</p>
+                            <p> display: grid;</p>
+                            <p> grid-template-columns: repeat(3, min-content) 1fr repeat(4, min-content);</p>
+                            <p> column-gap: 20px;</p>
+                            <p> }</p>
+                            <p> .grid-item{</p>
+                            <p> min-height: 50px;</p>
+                            <p> } </p>
+                        </div>
+
+
+                    </div>
+
+                    <!--   ========-->
+                    <div class="grid-content__column ">
+                        <div class="grid-content__col-title">
+                            <h3>-колонки по ширине контента. последняя прижимается вправо-</h3>
+
+                            <div class="footer__low">
+                                <span>© 2021 Nauja Oda. All rights reserved.</span>
+                                <a href="#!">Taisyklės ir sąlygos</a>
+                                <a href="#!">Privatumo politika</a>
+                                <div class="footer__soc soc">
+                                    <div class="soc-item"><a href="#!">
+                                        <svg>
+                                            <use xlink:href="/assets/img/sprite.svg#burger"></use>
+                                        </svg>
+
+                                    </a></div>
+                                    <div class="soc-item"><a href="#!">
+                                        <svg>
+                                            <use xlink:href="/assets/img/sprite.svg#close"></use>
+                                        </svg>
+
+                                    </a></div>
+                                    <div class="soc-item"><a href="#!">
+                                        <svg>
+                                            <use xlink:href="/assets/img/sprite.svg#close"></use>
+                                        </svg>
+
+                                    </a></div>
+                                </div>
+                            </div>
+
+                            <p> .footer__low{</p>
+                            <p> display: grid;</p>
+                            <p> grid-template-columns: repeat(3, min-content) 1fr;</p>
+                            <p> column-gap: 20px;</p>
+                            <p> align-items: center;</p>
+                            <p> }</p>
+                            <p> .footer__soc{</p>
+                            <p> justify-self: end;</p>
+                            <p> } </p>
+
+                        </div>
+                    </div>
+                    <!--   ========-->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--++++++++++++++++++-->
+
+    <!--    +++++++++tabs+++++++++++-->
+    <section class="tabs" id="tabs">
+
+        <div class="container">
+            <div class="tabs__title">
+                <h2>Независимые табы</h2>
+            </div>
+
+            <ul class="tabs__body tabs-container-js">
+
+                <li class="tabs__tab tab">
+                    <div class="tab__title tab-title-js">
+                        <span class="">Часто задаваемый вопрос №1</span>
+                        <i>
+                            <svg>
+                                <use xlink:href="/assets/img/sprite.svg#arrow-down"></use>
+                            </svg>
+                        </i>
+                    </div>
+                    <div class="tab__hidden tab-hidden-js">
+                        <p class=""> Противоположная точка зрения подразумевает, что активно развивающиеся страны
+                            третьего мира неоднозначны и будут ограничены исключительно образом мышления.</p>
+                        <p class=""> Противоположная точка зрения подразумевает, что активно развивающиеся страны
+                            третьего мира неоднозначны и будут ограничены исключительно образом мышления.</p>
+                    </div>
+                </li>
+
+
+                <li class="tabs__tab tab">
+                    <div class="tab__title tab-title-js">
+                        <span class="">Часто задаваемый вопрос №1</span>
+                        <i>
+                            <svg>
+                                <use xlink:href="/assets/img/sprite.svg#arrow-down"></use>
+                            </svg>
+                        </i>
+                    </div>
+                    <div class="tab__hidden tab-hidden-js">
+                        <p class=""> Противоположная точка зрения подразумевает, что активно развивающиеся страны
+                            третьего мира неоднозначны и будут ограничены исключительно образом мышления.</p>
+                        <p class="">В своём стремлении повысить качество жизни, они забывают, что новая модель
+                            организационной деятельности является качественно новой ступенью переосмысления
+                            внешнеэкономических политик.</p>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+    </section>
+    <!--    ++++++++///tabs++++++++++++-->
+
+
+    <!--+++++++forms+++++++++++-->
+    <section class="some-forms" id="some-forms">
+
+
+        <div class="container">
+
+            <form action="" class="contact-form">
+                <div class="contact-form__title">
+                    <h2>Контактная форма</h2>
+                </div>
+                <div class="contact-form__item">
+                    <label class="" for="name-form">
+                        Your name
+                    </label>
+                    <input type="text" placeholder="name" id="name-form">
+                </div>
+
+                <div class="contact-form__item">
+                    <label class="" for="email-form">
+                        email
+                    </label>
+                    <input type="email" placeholder="email" id="email-form">
+                </div>
+
+                <div class="contact-form__item">
+                    <label class="">
+                        phone
+                    </label>
+                    <input type="phone" placeholder="phone" id="phone-form">
+                </div>
+
+                <div class="contact-form__item">
+                    <div>
+                        <input id="cb1" type="checkbox"/>
+                        <label for="cb1">Флажок 1</label>
+                    </div>
+                    <div>
+                        <input id="cb2" type="checkbox"/>
+                        <label for="cb2">Флажок 2</label>
+                    </div>
+                    <div>
+                        <input id="cb3" type="checkbox"/>
+                        <label for="cb3">Флажок 3</label>
+                    </div>
+                    <div class="m20"></div>
+                    <div>
+                        <input id="rb1" type="radio" name="rb" checked=""/>
+                        <label for="rb1">Переключатель 1</label>
+                    </div>
+                    <div>
+                        <input id="rb2" type="radio" name="rb"/>
+                        <label for="rb2">Переключатель 2</label>
+                    </div>
+                    <div>
+                        <input id="rb3" type="radio" name="rb"/>
+                        <label for="rb3">Переключатель 3</label>
+                    </div>
+                </div>
+
+                <div class="contact-form__item">
+                    <section data-type="slider-group" data-question-id="9">
+                        <div class="news-left-column__title">Ставка</div>
+                        <p class="range">
+                        <div class="news-left-column__number">
+                            <output></output>
+                            <b>лет </b>
+                        </div>
+                        <input id="test4" type="range" min="0" max="20" value="1" step="1" name="groep4">
+                        </p>
+                    </section>
+
+                </div>
+
+                <button type="submit" class="submit-button btn btn--success">Отправить форму</button>
+            </form>
+        </div>
+
+
+        <div class="container">
+            <form class="form">
+                <div class="form__item">
+                    <input id="name1" type="text" required="" placeholder=" Denzel Washington"/>
+                    <label for="name1">What is your name?</label>
+                </div>
+                <div class="form__item">
+                    <input id="email1" type="email" required="" placeholder=" thebestmail@mail.com"/>
+                    <label for="email1">What is your email?</label>
+                </div>
+                <div class="form__item ">
+                    <textarea id="message1" type="text" required="" placeholder=" Your awesome         message"
+                              cols=" 40" rows="6"></textarea>
+                    <label for="message1">Write your message</label>
+                </div>
+                <div class="form__item contacts__file-add">
+                    <input class="custom-file-input" id="customFile1" type="file"/>
+                    <label class="name__text" for="customFile1">Add "attachment</label>
+                    <div class="custom-file"></div>
+                </div>
+                <div class="form__item form__item--submit">
+                    <input class="submit-button btn btn--success" type="submit" placeholder="Send message"/>
+                </div>
+            </form>
+        </div>
+
+
+    </section>
+    <!--++++++++++++++++++-->
+
+
+    <!--+++++++sliders+++++++++++-->
+    <section class="slider" id="slider">
+
+        <!--  -------- -->
+        <div class="container">
+            <div class="slider-full slider-full-js swiper-container"><!--здесь  overflow: hidden;-->
+                <div class=" swiper-wrapper">
+                    <div class="slider__item swiper-slide">
+                        <div class="imgs"><img src="assets/img/i-1.png   "/></div>
+                    </div>
+                    <div class="slider__item swiper-slide">
+                        <div class="imgs"><img src="assets/img/p.jpg  "/></div>
+                    </div>
+                    <div class="slider__item swiper-slide">
+                        <div class="imgs"><img src="assets/img/img-2.png  "/></div>
+                    </div>
+                    <div class="slider__item swiper-slide">
+                        <div class="imgs"><img src="assets/img/img-6.svg   "/></div>
+                    </div>
+                </div>
+                <div class="swiper-pagination-1"></div>
+            </div>
+        </div>
+        <!--  -------- -->
+        <div class="container">
+            <div class="slider__body"><!--здесь  overflow: hidden;-->
+
+                <button class="content-slider-arrow content-slider-prev" type="button">
+                    <svg>
+                        <use xlink:href="assets/img/sprite.svg#arrow-right"></use>
+                    </svg>
+                </button>
+
+                <button class="content-slider-arrow content-slider-next" type="button">
+                    <svg>
+                        <use xlink:href="assets/img/sprite.svg#arrow-left"></use>
+                    </svg>
+                </button>
+
+                <div class="slider__wrapper slider-js-1 swiper-container">
+                    <div class=" swiper-wrapper">
+                        <div class="slider__item swiper-slide">
+                            <div class="imgs">
+                                <img src="assets/img/i-1.png  "/>
+                            </div>
+                        </div>
+                        <div class="slider__item swiper-slide">
+                            <div class="imgs">
+                                <img src="assets/img/p.jpg  "/></div>
+                        </div>
+                        <div class="slider__item swiper-slide">
+                            <div class="imgs">
+                                <img src="assets/img/img-2.png  "/>
+                            </div>
+                        </div>
+                        <div class="slider__item swiper-slide">
+                            <div class="imgs">
+                                <img src="assets/img/img-6.svg  "/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!--++++++++++++++++++-->
+
+
+    <!--++++++++++++++++++-->
+    <!--++++++++++++++++++-->
+    <!--++++++++++++++++++-->
+
+    <!--+++++++footer+++++++++++-->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer__body">
+                <div class="footer-content__column">
+                    <div class="footer__title">
+                        <h2>Company</h2>
+                    </div>
+
+                    <div class="footer__line footer-line">
+                        <div class="footer-line__text">footer-line-text</div>
+                        <div class="footer-line__text">footer-line-text</div>
+                    </div>
+                    <div class="footer__line footer-line">
+                        <div class="footer-line__text">footer-line-text</div>
+                        <div class="footer-line__text">footer-line-text</div>
+                    </div>
+
+                    <div class="footer__line footer-line">
+                        <div class="footer-line__text">footer-line-text</div>
+                        <div class="footer-line__text">footer-line-text</div>
+                    </div>
+
+
+                </div>
+
+                <div class="footer-content__column">
+                    <div class="footer__title-small">
+                        Заголовок колонки
+                    </div>
+
+                    <div class="footer__line footer-line">
+                        <div class="footer-line__text">footer-line-text</div>
+                        <div class="footer-line__text">footer-line-text</div>
+                    </div>
+                    <div class="footer__line footer-line">
+                        <div class="footer-line__text">footer-line-text</div>
+                        <div class="footer-line__text">footer-line-text</div>
+                    </div>
+                    <div class="footer__line footer-line">
+                        <div class="footer-line__text">footer-line-text</div>
+                        <div class="footer-line__text">footer-line-text</div>
+                    </div>
+
+                </div>
+
+                <div class="footer-content__column">
+                    <div class="footer__title-small">
+                        Заголовок колонки
+                    </div>
+                    <div class="footer__line footer-line">
+                        <div class="footer-line__text">footer-line-text</div>
+                        <div class="footer-line__text">footer-line-text</div>
+                    </div>
+                    <div class="footer__line footer-line">
+                        <div class="footer-line__text">footer-line-text</div>
+                        <div class="footer-line__text">footer-line-text</div>
+                    </div>
+                    <div class="footer__line footer-line">
+                        <div class="footer-line__text">footer-line-text</div>
+                        <div class="footer-line__text">footer-line-text</div>
+                    </div>
+                </div>
+
+                <div class="footer-content__column">
+                    <div class="footer__title-small">
+                        Заголовок колонки
+                    </div>
+                    <div class="footer__line footer-line">
+                        <div class="footer-line__text">footer-line-text</div>
+                        <div class="footer-line__text">footer-line-text</div>
+                    </div>
+                    <div class="footer__line footer-line">
+                        <div class="footer-line__text">footer-line-text</div>
+                        <div class="footer-line__text">footer-line-text</div>
+                    </div>
+
+                    <div class="footer__line footer-line">
+                        <div class="footer-line__text">footer-line-text</div>
+                        <div class="footer-line__text">footer-line-text</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__low">
+                <span>© 2021 Nauja Oda. All rights reserved.</span>
+                <a href="#!">Taisyklės ir sąlygos</a>
+                <a href="#!">Privatumo politika</a>
+                <div class="footer__soc soc">
+                    <div class="soc-item"><a href="#!">
+                        <svg>
+                            <use xlink:href='/assets/img/sprite.svg#burger'></use>
+                        </svg>
+
+                    </a></div>
+                    <div class="soc-item"><a href="#!">
+                        <svg>
+                            <use xlink:href='/assets/img/sprite.svg#close'></use>
+                        </svg>
+
+                    </a></div>
+                    <div class="soc-item"><a href="#!">
+                        <svg>
+                            <use xlink:href='/assets/img/sprite.svg#close'></use>
+                        </svg>
+
+                    </a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--++++++++++++++++++-->
+
+
+</div><!--++++++++//wrapper++++++++++-->
+
+<!--+++++++  popup  +++++++++++-->
+<div class="popup" id="popup">
+    <div class="popup__overlay">
+        <div class="popup__inner">
+            <form class="form">
+                <div class="form__item">
+                    <input id="name" type="text" required="" placeholder=" Denzel Washington"/>
+                    <label for="name">What is your name?</label>
+                </div>
+                <div class="form__item">
+                    <input id="email" type="email" required="" placeholder=" thebestmail@mail.com"/>
+                    <label for="email">What is your email?</label>
+                </div>
+                <div class="form__item">
+                    <textarea id="message" type="text" required="" placeholder=" Your awesome         message"
+                              cols=" 40" rows="6"></textarea>
+                    <label for="message">Write your message</label>
+                </div>
+                <div class="form__item contacts__file-add">
+                    <input class="custom-file-input" id="customFile" type="file"/>
+                    <label class="name__text" for="customFile">Add "attachment</label>
+                    <div class="custom-file"></div>
+                </div>
+                <div class="form__item">
+                    <input class="submit-button btn btn--success" type="submit" placeholder="Send message"/>
+                </div>
+            </form>
+
+            <i class="popup__close popup__close">
+                <svg>
+                    <use xlink:href="/assets/img/sprite.svg#close"></use>
+                </svg>
+            </i>
+        </div>
+    </div>
+</div>
+<!--++++++++++++++++++-->
+
+
+<script src="assets/js/header.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/MySwiper.js"></script>
+<script src="assets/js/tabs.js"></script>
+<script src="assets/js/popup.js"></script>
+<script src="assets/js/input-range.js"></script>
+
+</body>
+</html>

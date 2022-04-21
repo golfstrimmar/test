@@ -1,0 +1,54 @@
+.popup, .popups, .popup-player {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 1000;
+	overflow-y: auto;
+}
+.popup__overlay, .popups__overlay{
+	width: 100%;
+	min-height: 100vh;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 1000;
+
+}
+.popup__inner, .popups__inner{
+	position: relative;
+	border: 30px solid DARKSLATEGRAY;
+	border-radius: 10px;
+	z-index: 1010;
+	width: 80vw;
+	height: 80vh;
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/* bottom: 0; */
+	/* right: 0; */
+	transform: translate(-50%, -50%);
+	justify-content: center;
+	align-items: center;
+}
+
+.popup__close {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: -65px;
+	right: -65px;
+}
+.popup__close svg {
+	stroke: white;
+	transition: all 0.2s ease-in-out;
+	width: 40px;
+	height: 40px;
+}
+.popup__close:hover {
+	cursor: pointer;
+}
+.popup__close:hover svg {
+	stroke: darkgray;
+}
